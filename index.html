@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Autoproxyswitcher : Automates your internet proxy change when you move (home / office)">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Autoproxyswitcher</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/lion06/autoproxyswitcher">View on GitHub</a>
+
+          <h1 id="project_title">Autoproxyswitcher</h1>
+          <h2 id="project_tagline">Automates your internet proxy change when you move (home / office)</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/lion06/autoproxyswitcher/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/lion06/autoproxyswitcher/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Auto Proxy Switcher</p>
+
+<p>AutoProxySwitcher automates your internet proxy change when you move (home / office). It detects network change and sets the internet proxy according to rules you define.</p>
+
+<p>A good use case is when you want to automatically switch to your company proxy when you detect you're connected to its network, and you want to disable the proxy when you're not (at home for example).</p>
+
+<p>Works with Internet Explorer, Chrome, and Firefox when they're configured to use system proxy settings.
+Requirements</p>
+
+<pre><code>Microsoft DotNet Framework 4.0
+Windows 8, Windows 7, Windows XP SP3 
+</code></pre>
+
+<p>Downloads</p>
+
+<p>Latest stable: AutoProxySwitcher_1.1.6.msi</p>
+
+<p>For details, older versions or beta, see Download.
+Features</p>
+
+<pre><code>Detects network change (lan connexion, wifi connexion, disconnection, ...)
+Baloon alert in system tray when network changes
+Chooses the proxy based on rules defined in "rules.xml" file. 2 kind of rules are handled:
+    Network mask matching (example: network has mask 10.0.0.0/8)
+    DNS address rule matching (example: DNS is 192.168.0.254) 
+3 kinds of proxy can be configured:
+    Standard proxy
+    PAC File
+    No proxy (direct connexion) 
+English application
+Internally uses documented Windows API to switch proxy (no black magic)
+MSI Setup (Build with WIX) 
+</code></pre>
+
+<p>Configuration</p>
+
+<p>See ConfigurationFile. </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Autoproxyswitcher maintained by <a href="https://github.com/lion06">lion06</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
